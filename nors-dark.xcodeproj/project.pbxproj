@@ -12,6 +12,7 @@
 		545AC0B127B1286E00EA8A48 /* AuthTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545AC0B027B1286E00EA8A48 /* AuthTextView.swift */; };
 		545AC0B327B138FF00EA8A48 /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545AC0B227B138FF00EA8A48 /* ConfirmViewController.swift */; };
 		5461BBE227B3B9F500513678 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5461BBE127B3B9F500513678 /* LoginViewController.swift */; };
+		5461BBE427B3DB5500513678 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5461BBE327B3DB5500513678 /* ForgotPasswordViewController.swift */; };
 		5469631B27AFD62E000B20E5 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5469631A27AFD62E000B20E5 /* WelcomeViewController.swift */; };
 		5469631D27AFE144000B20E5 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5469631C27AFE144000B20E5 /* Images.swift */; };
 		54A74AE027B148A0007498D0 /* KeyboardNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A74ADF27B148A0007498D0 /* KeyboardNotification.swift */; };
@@ -33,6 +34,7 @@
 		545AC0B027B1286E00EA8A48 /* AuthTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTextView.swift; sourceTree = "<group>"; };
 		545AC0B227B138FF00EA8A48 /* ConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
 		5461BBE127B3B9F500513678 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5461BBE327B3DB5500513678 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		5469631A27AFD62E000B20E5 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		5469631C27AFE144000B20E5 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		54A74ADF27B148A0007498D0 /* KeyboardNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardNotification.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				545AC0B227B138FF00EA8A48 /* ConfirmViewController.swift */,
+				5461BBE327B3DB5500513678 /* ForgotPasswordViewController.swift */,
 				5461BBE127B3B9F500513678 /* LoginViewController.swift */,
 				545AC0AC27B10FCB00EA8A48 /* SignUpViewController.swift */,
 				5469631A27AFD62E000B20E5 /* WelcomeViewController.swift */,
@@ -211,6 +214,7 @@
 				545AC0B327B138FF00EA8A48 /* ConfirmViewController.swift in Sources */,
 				54B5E4B527A9B0A500F0C653 /* Colors.swift in Sources */,
 				5469631B27AFD62E000B20E5 /* WelcomeViewController.swift in Sources */,
+				5461BBE427B3DB5500513678 /* ForgotPasswordViewController.swift in Sources */,
 				54F385F527A9AF3F0067C9BE /* AppDelegate.swift in Sources */,
 				545AC0B127B1286E00EA8A48 /* AuthTextView.swift in Sources */,
 			);

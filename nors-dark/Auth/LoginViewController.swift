@@ -71,7 +71,7 @@ final class LoginViewController: UIViewController {
 			signUpView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: .offset),
 			signUpView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -.offset),
 
-			forgotPasswordView.topAnchor.constraint(equalTo: signUpView.bottomAnchor, constant: 7),
+			forgotPasswordView.topAnchor.constraint(equalTo: signUpView.bottomAnchor),
 			forgotPasswordView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: .offset),
 			forgotPasswordView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -.offset),
 			forgotPasswordView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -54)

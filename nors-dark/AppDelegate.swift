@@ -16,7 +16,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 
 		let window = UIWindow()
 		self.window = window
-		window.rootViewController = LoginViewController()
+		window.rootViewController = ForgotPasswordViewController()
 		window.makeKeyAndVisible()
 
 		return true
