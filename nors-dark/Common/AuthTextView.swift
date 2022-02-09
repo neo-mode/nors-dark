@@ -12,7 +12,7 @@ final class AuthTextView: UIView {
 	private let textLabel = UILabel()
 	private let button = UIButton()
 
-	init(text: String, buttonText: String) {
+	init(text: String, buttonText: String, tag: Int = 0) {
 		super.init(frame: .zero)
 
 		textLabel.font = .SF_regular(size: 12)
@@ -20,10 +20,11 @@ final class AuthTextView: UIView {
 		textLabel.text = text
 		textLabel.translatesAutoresizingMaskIntoConstraints = false
 
+		button.tag = tag
 		button.setTitle(buttonText, for: .normal)
 		button.setTitleColor(.white, for: .normal)
 		button.titleLabel?.font = .SF_bold(size: 12)
-		button.addTarget(nil, action: Selector(("authTextAction")), for: .touchUpInside)
+		button.addTarget(nil, action: Selector(("authTextAction:")), for: .touchUpInside)
 		button.translatesAutoresizingMaskIntoConstraints = false
 
 		addSubview(textLabel)

@@ -14,6 +14,8 @@ final class ConfirmViewController: UIViewController {
 	private let confirmButton = Button(style: .blue, title: "Confirm")
 	private let authTextView = AuthTextView(text: "Do not get it?", buttonText: "Resend code")
 
+	private let textFieldDelegate = TextFieldDelegate()
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		view.backgroundColor = Colors.black
@@ -24,7 +26,9 @@ final class ConfirmViewController: UIViewController {
 		textLabel.numberOfLines = 0
 		textLabel.translatesAutoresizingMaskIntoConstraints = false
 
+		textField.delegate = textFieldDelegate
 		textField.placeholder = "Code"
+		textField.keyboardType = .numberPad
 		textField.translatesAutoresizingMaskIntoConstraints = false
 
 		confirmButton.translatesAutoresizingMaskIntoConstraints = false
@@ -34,6 +38,8 @@ final class ConfirmViewController: UIViewController {
 		view.addSubview(textField)
 		view.addSubview(confirmButton)
 		view.addSubview(authTextView)
+
+		textFieldDelegate.view = view
 
 		NSLayoutConstraint.activate([
 			textLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: .offset),

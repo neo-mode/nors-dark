@@ -20,9 +20,11 @@ final class SignUpViewController: UIViewController {
 		view.backgroundColor = Colors.black
 
 		emailField.placeholder = "E-mail"
+		emailField.keyboardType = .emailAddress
 		emailField.translatesAutoresizingMaskIntoConstraints = false
 
 		passwordField.placeholder = "Password"
+		passwordField.isSecureTextEntry = true
 		passwordField.translatesAutoresizingMaskIntoConstraints = false
 
 		confirmPasswordField.placeholder = "Confirm Password"
