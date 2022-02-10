@@ -1,6 +1,8 @@
 import UIKit
 
 enum ImageName: String {
+	case heartOff = "heart-off"
+	case heartOn = "heart-on"
 	case splash
 }
 
