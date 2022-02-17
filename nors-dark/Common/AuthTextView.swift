@@ -16,7 +16,7 @@ final class AuthTextView: UIView {
 		super.init(frame: .zero)
 
 		textLabel.font = .SF_regular(size: 12)
-		textLabel.textColor = Colors.white
+		textLabel.textColor = Color.white
 		textLabel.text = text
 		textLabel.translatesAutoresizingMaskIntoConstraints = false
 

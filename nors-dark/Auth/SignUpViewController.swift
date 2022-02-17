@@ -17,7 +17,7 @@ final class SignUpViewController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		view.backgroundColor = Colors.black
+		view.backgroundColor = Color.black
 
 		emailField.placeholder = "E-mail"
 		emailField.keyboardType = .emailAddress

@@ -22,9 +22,9 @@ final class SearchItemCell: UITableViewCell, ViewCellID {
 	private let formatter = NumberFormatter()
 	private let cellImageView = FavoriteImageView()
 	private let priceLabel = UILabel()
-	private let squareView = TitleDescrView(title: "m2")
-	private let roomsView = TitleDescrView(title: "Number of Rooms")
-	private let districtView = TitleDescrView(title: "District")
+	private let squareView = TitleDescrView(style: .search, title: "m2")
+	private let roomsView = TitleDescrView(style: .search, title: "Number of Rooms")
+	private let districtView = TitleDescrView(style: .search, title: "District")
 
 	override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
 		super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -41,7 +41,7 @@ final class SearchItemCell: UITableViewCell, ViewCellID {
 		cellImageView.translatesAutoresizingMaskIntoConstraints = false
 
 		priceLabel.font = .SF_bold(size: 22)
-		priceLabel.textColor = Colors.white
+		priceLabel.textColor = Color.white
 		priceLabel.translatesAutoresizingMaskIntoConstraints = false
 
 		squareView.translatesAutoresizingMaskIntoConstraints = false

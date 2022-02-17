@@ -24,7 +24,7 @@ final class FavoriteImageView: UIView {
 
 		circleView.addTarget(nil, action: Selector(("favoriteImageViewAction:")), for: .touchUpInside)
 		circleView.layer.cornerRadius = 15
-		circleView.backgroundColor = UIColor(red: 0.196, green: 0.212, blue: 0.263, alpha: 0.1)
+		circleView.backgroundColor = Color.middleGray2.withAlphaComponent(0.1)
 		circleView.translatesAutoresizingMaskIntoConstraints = false
 
 		circleImageView.translatesAutoresizingMaskIntoConstraints = false

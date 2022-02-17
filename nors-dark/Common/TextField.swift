@@ -15,14 +15,14 @@ final class TextField: UITextField {
 		didSet {
 			guard let placeholder = placeholder else { return }
 			attributedPlaceholder = NSAttributedString(string: placeholder, attributes: [
-				.font: UIFont.SF_regular(size: 14), .foregroundColor: Colors.lightGray
+				.font: UIFont.SF_regular(size: 14), .foregroundColor: Color.lightGray
 			])
 		}
 	}
 
 	override init(frame: CGRect) {
 		super.init(frame: frame)
-		backgroundColor = Colors.darkBlue
+		backgroundColor = Color.darkBlue
 		layer.cornerRadius = 10
 		font = .SF_regular(size: 14)
 		textColor = .white

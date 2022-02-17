@@ -16,26 +16,26 @@ final class Button: UIButton {
 	init(style: Style, title: String? = nil) {
 		super.init(frame: .zero)
 		layer.cornerRadius = 20
-		contentEdgeInsets = UIEdgeInsets(top: 14, left: 0, bottom: 16, right: 0)
+		contentEdgeInsets = UIEdgeInsets(top: 17, left: 0, bottom: 18, right: 0)
 		titleLabel?.font = .SF_bold(size: 12)
 		setTitle(title, for: .normal)
 
 		switch style {
 		case .whiteBlue:
 			backgroundColor = .white
-			setTitleColor(Colors.blue, for: .normal)
+			setTitleColor(Color.blue, for: .normal)
 
 		case .whiteGray:
 			layer.borderWidth = 1
-			layer.borderColor = Colors.darkBlue.cgColor
-			setTitleColor(Colors.darkGray, for: .normal)
+			layer.borderColor = Color.darkBlue.cgColor
+			setTitleColor(Color.darkGray, for: .normal)
 
 		case .black:
-			backgroundColor = Colors.black
-			setTitleColor(Colors.white, for: .normal)
+			backgroundColor = Color.black
+			setTitleColor(Color.white, for: .normal)
 
 		case .blue:
-			backgroundColor = Colors.blue
+			backgroundColor = Color.blue
 			setTitleColor(.white, for: .normal)
 		}
 	}

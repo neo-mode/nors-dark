@@ -15,20 +15,27 @@ final class TitleDescrView: UIView {
 	private let titleLabel = UILabel()
 	private let descrLabel = UILabel()
 
-	init(title: String, descr: String? = nil) {
+	init(style: DetailInfoViewStyle, title: String, descr: String? = nil) {
 		self.title = title
 		self.descr = descr
 		super.init(frame: .zero)
 
 		titleLabel.text = title
 		titleLabel.font = .SF_medium(size: 12)
-		titleLabel.textColor = Colors.middleGray
 		titleLabel.translatesAutoresizingMaskIntoConstraints = false
 
 		descrLabel.text = descr
 		descrLabel.font = .SF_regular(size: 12)
-		descrLabel.textColor = Colors.lightGray
+		descrLabel.textColor = Color.lightGray
 		descrLabel.translatesAutoresizingMaskIntoConstraints = false
+
+		switch style {
+		case .search:
+			titleLabel.textColor = Color.middleGray
+
+		case .detail:
+			titleLabel.textColor = Color.darkGray
+		}
 
 		addSubview(titleLabel)
 		addSubview(descrLabel)

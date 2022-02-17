@@ -15,7 +15,7 @@ final class ForgotPasswordViewController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		view.backgroundColor = Colors.black
+		view.backgroundColor = Color.black
 		textFieldDelegate.view = view
 
 		emailField.delegate = textFieldDelegate

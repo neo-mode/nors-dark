@@ -17,6 +17,8 @@
 		541A816B27B5284500D0EE2A /* villa5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 541A816227B5284500D0EE2A /* villa5.jpg */; };
 		541A816C27B5284500D0EE2A /* villa7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 541A816327B5284500D0EE2A /* villa7.jpg */; };
 		541A816D27B5284500D0EE2A /* villa8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 541A816427B5284500D0EE2A /* villa8.jpg */; };
+		541A816F27B5420700D0EE2A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541A816E27B5420700D0EE2A /* DetailViewController.swift */; };
+		5432B17727BCE9FB00CAD280 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5432B17627BCE9FB00CAD280 /* PhotoCell.swift */; };
 		5459888A27B4547D00B0328D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5459888927B4547D00B0328D /* SearchViewController.swift */; };
 		5459888C27B457CC00B0328D /* FavoriteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5459888B27B457CC00B0328D /* FavoriteImageView.swift */; };
 		545AC0AD27B10FCB00EA8A48 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545AC0AC27B10FCB00EA8A48 /* SignUpViewController.swift */; };
@@ -28,19 +30,17 @@
 		5461BBE727B3E13500513678 /* SearchItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5461BBE627B3E13500513678 /* SearchItemCell.swift */; };
 		5461BBE927B3E36C00513678 /* TitleDescrView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5461BBE827B3E36C00513678 /* TitleDescrView.swift */; };
 		5461BBEB27B3E90100513678 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5461BBEA27B3E90100513678 /* TableViewDataSource.swift */; };
+		5463F89527B66A7F00E29322 /* DetailInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5463F89427B66A7F00E29322 /* DetailInfoView.swift */; };
+		5463F89727B69C0F00E29322 /* AllDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5463F89627B69C0F00E29322 /* AllDetailsViewController.swift */; };
 		5469631B27AFD62E000B20E5 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5469631A27AFD62E000B20E5 /* WelcomeViewController.swift */; };
 		5469631D27AFE144000B20E5 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5469631C27AFE144000B20E5 /* Images.swift */; };
 		54A74AE027B148A0007498D0 /* KeyboardNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A74ADF27B148A0007498D0 /* KeyboardNotification.swift */; };
-		54B5E4B527A9B0A500F0C653 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B5E4B427A9B0A500F0C653 /* Colors.swift */; };
+		54B5E4B527A9B0A500F0C653 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B5E4B427A9B0A500F0C653 /* Color.swift */; };
 		54B5E4C027A9B7EF00F0C653 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B5E4BF27A9B7EF00F0C653 /* Fonts.swift */; };
 		54B5E4C627A9BB7F00F0C653 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B5E4C527A9BB7F00F0C653 /* Button.swift */; };
 		54F385F527A9AF3F0067C9BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F385F427A9AF3F0067C9BE /* AppDelegate.swift */; };
 		54F385FE27A9AF410067C9BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54F385FD27A9AF410067C9BE /* Assets.xcassets */; };
 		54F3860127A9AF410067C9BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54F385FF27A9AF410067C9BE /* LaunchScreen.storyboard */; };
-		54F860CB27B01A1900EDABFE /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 54F860C727B01A1900EDABFE /* SF-Pro-Display-Medium.otf */; };
-		54F860CC27B01A1900EDABFE /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 54F860C827B01A1900EDABFE /* SF-Pro-Display-Regular.otf */; };
-		54F860CD27B01A1900EDABFE /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 54F860C927B01A1900EDABFE /* SF-Pro-Display-Bold.otf */; };
-		54F860CE27B01A1900EDABFE /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 54F860CA27B01A1900EDABFE /* SF-Pro-Display-Semibold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +54,8 @@
 		541A816227B5284500D0EE2A /* villa5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = villa5.jpg; path = ../../villa5.jpg; sourceTree = "<group>"; };
 		541A816327B5284500D0EE2A /* villa7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = villa7.jpg; path = ../../villa7.jpg; sourceTree = "<group>"; };
 		541A816427B5284500D0EE2A /* villa8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = villa8.jpg; path = ../../villa8.jpg; sourceTree = "<group>"; };
+		541A816E27B5420700D0EE2A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		5432B17627BCE9FB00CAD280 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		5459888927B4547D00B0328D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		5459888B27B457CC00B0328D /* FavoriteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteImageView.swift; sourceTree = "<group>"; };
 		545AC0AC27B10FCB00EA8A48 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -65,10 +67,12 @@
 		5461BBE627B3E13500513678 /* SearchItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemCell.swift; sourceTree = "<group>"; };
 		5461BBE827B3E36C00513678 /* TitleDescrView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleDescrView.swift; sourceTree = "<group>"; };
 		5461BBEA27B3E90100513678 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		5463F89427B66A7F00E29322 /* DetailInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInfoView.swift; sourceTree = "<group>"; };
+		5463F89627B69C0F00E29322 /* AllDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDetailsViewController.swift; sourceTree = "<group>"; };
 		5469631A27AFD62E000B20E5 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		5469631C27AFE144000B20E5 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		54A74ADF27B148A0007498D0 /* KeyboardNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardNotification.swift; sourceTree = "<group>"; };
-		54B5E4B427A9B0A500F0C653 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		54B5E4B427A9B0A500F0C653 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		54B5E4BF27A9B7EF00F0C653 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		54B5E4C527A9BB7F00F0C653 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		54F385F127A9AF3F0067C9BE /* nors-dark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nors-dark.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,10 +80,6 @@
 		54F385FD27A9AF410067C9BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54F3860027A9AF410067C9BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54F3860227A9AF410067C9BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		54F860C727B01A1900EDABFE /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
-		54F860C827B01A1900EDABFE /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
-		54F860C927B01A1900EDABFE /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
-		54F860CA27B01A1900EDABFE /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,12 +93,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		541A817027B5426A00D0EE2A /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				5463F89627B69C0F00E29322 /* AllDetailsViewController.swift */,
+				541A816E27B5420700D0EE2A /* DetailViewController.swift */,
+				5432B17627BCE9FB00CAD280 /* PhotoCell.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		5461BBE527B3E11100513678 /* Search */ = {
 			isa = PBXGroup;
 			children = (
 				5461BBE627B3E13500513678 /* SearchItemCell.swift */,
 				5459888927B4547D00B0328D /* SearchViewController.swift */,
-				5461BBE827B3E36C00513678 /* TitleDescrView.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -120,11 +129,13 @@
 			children = (
 				545AC0B027B1286E00EA8A48 /* AuthTextView.swift */,
 				54B5E4C527A9BB7F00F0C653 /* Button.swift */,
+				5463F89427B66A7F00E29322 /* DetailInfoView.swift */,
 				5459888B27B457CC00B0328D /* FavoriteImageView.swift */,
 				5469631C27AFE144000B20E5 /* Images.swift */,
 				54A74ADF27B148A0007498D0 /* KeyboardNotification.swift */,
 				5461BBEA27B3E90100513678 /* TableViewDataSource.swift */,
 				545AC0AE27B1117E00EA8A48 /* TextField.swift */,
+				5461BBE827B3E36C00513678 /* TitleDescrView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -148,12 +159,12 @@
 		54F385F327A9AF3F0067C9BE /* nors-dark */ = {
 			isa = PBXGroup;
 			children = (
-				5461BBE527B3E11100513678 /* Search */,
 				5469631927AFD617000B20E5 /* Auth */,
 				54B5E4C427A9BB7300F0C653 /* Common */,
-				54F860CF27B01A2400EDABFE /* Fonts */,
+				541A817027B5426A00D0EE2A /* Detail */,
+				5461BBE527B3E11100513678 /* Search */,
 				54F385F427A9AF3F0067C9BE /* AppDelegate.swift */,
-				54B5E4B427A9B0A500F0C653 /* Colors.swift */,
+				54B5E4B427A9B0A500F0C653 /* Color.swift */,
 				54B5E4BF27A9B7EF00F0C653 /* Fonts.swift */,
 				541A815A27B513D500D0EE2A /* villa1.jpg */,
 				541A816127B5284500D0EE2A /* villa2.jpg */,
@@ -170,17 +181,6 @@
 				54F3860227A9AF410067C9BE /* Info.plist */,
 			);
 			path = "nors-dark";
-			sourceTree = "<group>";
-		};
-		54F860CF27B01A2400EDABFE /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				54F860C927B01A1900EDABFE /* SF-Pro-Display-Bold.otf */,
-				54F860C727B01A1900EDABFE /* SF-Pro-Display-Medium.otf */,
-				54F860C827B01A1900EDABFE /* SF-Pro-Display-Regular.otf */,
-				54F860CA27B01A1900EDABFE /* SF-Pro-Display-Semibold.otf */,
-			);
-			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,17 +241,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54F860CE27B01A1900EDABFE /* SF-Pro-Display-Semibold.otf in Resources */,
 				541A816927B5284500D0EE2A /* villa4.jpg in Resources */,
-				54F860CB27B01A1900EDABFE /* SF-Pro-Display-Medium.otf in Resources */,
 				541A816827B5284500D0EE2A /* villa6.jpg in Resources */,
 				541A816527B5284500D0EE2A /* villa9.jpg in Resources */,
-				54F860CD27B01A1900EDABFE /* SF-Pro-Display-Bold.otf in Resources */,
 				54F3860127A9AF410067C9BE /* LaunchScreen.storyboard in Resources */,
 				541A816A27B5284500D0EE2A /* villa2.jpg in Resources */,
 				541A816B27B5284500D0EE2A /* villa5.jpg in Resources */,
 				541A816D27B5284500D0EE2A /* villa8.jpg in Resources */,
-				54F860CC27B01A1900EDABFE /* SF-Pro-Display-Regular.otf in Resources */,
 				541A815B27B513D500D0EE2A /* villa1.jpg in Resources */,
 				541A816727B5284500D0EE2A /* villa10.jpg in Resources */,
 				54F385FE27A9AF410067C9BE /* Assets.xcassets in Resources */,
@@ -273,16 +269,20 @@
 				5459888A27B4547D00B0328D /* SearchViewController.swift in Sources */,
 				5461BBEB27B3E90100513678 /* TableViewDataSource.swift in Sources */,
 				545AC0AD27B10FCB00EA8A48 /* SignUpViewController.swift in Sources */,
+				5432B17727BCE9FB00CAD280 /* PhotoCell.swift in Sources */,
 				54A74AE027B148A0007498D0 /* KeyboardNotification.swift in Sources */,
 				5461BBE727B3E13500513678 /* SearchItemCell.swift in Sources */,
 				5459888C27B457CC00B0328D /* FavoriteImageView.swift in Sources */,
 				5469631D27AFE144000B20E5 /* Images.swift in Sources */,
+				541A816F27B5420700D0EE2A /* DetailViewController.swift in Sources */,
 				545AC0AF27B1117E00EA8A48 /* TextField.swift in Sources */,
 				54B5E4C027A9B7EF00F0C653 /* Fonts.swift in Sources */,
 				545AC0B327B138FF00EA8A48 /* ConfirmViewController.swift in Sources */,
-				54B5E4B527A9B0A500F0C653 /* Colors.swift in Sources */,
+				54B5E4B527A9B0A500F0C653 /* Color.swift in Sources */,
 				5469631B27AFD62E000B20E5 /* WelcomeViewController.swift in Sources */,
 				5461BBE427B3DB5500513678 /* ForgotPasswordViewController.swift in Sources */,
+				5463F89727B69C0F00E29322 /* AllDetailsViewController.swift in Sources */,
+				5463F89527B66A7F00E29322 /* DetailInfoView.swift in Sources */,
 				54F385F527A9AF3F0067C9BE /* AppDelegate.swift in Sources */,
 				545AC0B127B1286E00EA8A48 /* AuthTextView.swift in Sources */,
 			);

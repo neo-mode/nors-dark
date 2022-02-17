@@ -18,10 +18,10 @@ final class ConfirmViewController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		view.backgroundColor = Colors.black
+		view.backgroundColor = Color.black
 
 		textLabel.font = .SF_regular(size: 14)
-		textLabel.textColor = Colors.darkGray
+		textLabel.textColor = Color.darkGray
 		textLabel.text = "Please enter the verification code from the sms we just send you."
 		textLabel.numberOfLines = 0
 		textLabel.translatesAutoresizingMaskIntoConstraints = false

@@ -16,9 +16,15 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 
 		let window = UIWindow()
 		self.window = window
-		window.rootViewController = SearchViewController()
-		window.makeKeyAndVisible()
 
+		if #available(iOS 13.0, *) {
+			window.overrideUserInterfaceStyle = .dark
+		}
+
+		window.rootViewController = AllDetailsViewController(
+			model: DetailInfo(price: 1400000, square: 120, rooms: 4, district: "Toronto")
+		)
+		window.makeKeyAndVisible()
 		return true
 	}
 }

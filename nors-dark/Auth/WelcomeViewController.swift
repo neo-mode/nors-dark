@@ -20,10 +20,10 @@ final class WelcomeViewController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		view.backgroundColor = Colors.black
+		view.backgroundColor = Color.black
 
 		titleLabel.text = "Sed ut perspiciatis unde omnis iste natus error sit."
-		titleLabel.textColor = Colors.middleGray
+		titleLabel.textColor = Color.middleGray
 		titleLabel.translatesAutoresizingMaskIntoConstraints = false
 
 		signInButton.translatesAutoresizingMaskIntoConstraints = false

@@ -20,11 +20,11 @@ final class LoginViewController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		view.backgroundColor = Colors.black
+		view.backgroundColor = Color.black
 		textFieldDelegate.view = view
 
 		textLabel.font = .SF_medium(size: 10)
-		textLabel.textColor = Colors.darkGray
+		textLabel.textColor = Color.darkGray
 		textLabel.text = "LOGIN WITH"
 		textLabel.translatesAutoresizingMaskIntoConstraints = false
 		view.addSubview(textLabel)
