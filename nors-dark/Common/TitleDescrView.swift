@@ -21,11 +21,11 @@ final class TitleDescrView: UIView {
 		super.init(frame: .zero)
 
 		titleLabel.text = title
-		titleLabel.font = .SF_medium(size: 12)
+		titleLabel.font = .medium(size: 12)
 		titleLabel.translatesAutoresizingMaskIntoConstraints = false
 
 		descrLabel.text = descr
-		descrLabel.font = .SF_regular(size: 12)
+		descrLabel.font = .regular(size: 12)
 		descrLabel.textColor = Color.lightGray
 		descrLabel.translatesAutoresizingMaskIntoConstraints = false
 

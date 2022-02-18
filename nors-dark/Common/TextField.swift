@@ -15,7 +15,7 @@ final class TextField: UITextField {
 		didSet {
 			guard let placeholder = placeholder else { return }
 			attributedPlaceholder = NSAttributedString(string: placeholder, attributes: [
-				.font: UIFont.SF_regular(size: 14), .foregroundColor: Color.lightGray
+				.font: UIFont.regular(size: 14), .foregroundColor: Color.lightGray
 			])
 		}
 	}
@@ -24,7 +24,7 @@ final class TextField: UITextField {
 		super.init(frame: frame)
 		backgroundColor = Color.darkBlue
 		layer.cornerRadius = 10
-		font = .SF_regular(size: 14)
+		font = .regular(size: 14)
 		textColor = .white
 	}
 

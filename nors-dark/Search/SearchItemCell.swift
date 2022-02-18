@@ -40,7 +40,7 @@ final class SearchItemCell: UITableViewCell, ViewCellID {
 		cellImageView.clipsToBounds = true
 		cellImageView.translatesAutoresizingMaskIntoConstraints = false
 
-		priceLabel.font = .SF_bold(size: 22)
+		priceLabel.font = .bold(size: 22)
 		priceLabel.textColor = Color.white
 		priceLabel.translatesAutoresizingMaskIntoConstraints = false
 

@@ -17,7 +17,7 @@ final class Button: UIButton {
 		super.init(frame: .zero)
 		layer.cornerRadius = 20
 		contentEdgeInsets = UIEdgeInsets(top: 17, left: 0, bottom: 18, right: 0)
-		titleLabel?.font = .SF_bold(size: 12)
+		titleLabel?.font = .bold(size: 12)
 		setTitle(title, for: .normal)
 
 		switch style {

@@ -8,8 +8,8 @@
 import UIKit
 
 extension UIFont {
-	static func SF_bold(size: CGFloat) -> UIFont { .systemFont(ofSize: size, weight: .bold) }
-	static func SF_semibold(size: CGFloat) -> UIFont { .systemFont(ofSize: size, weight: .semibold) }
-	static func SF_medium(size: CGFloat) -> UIFont { .systemFont(ofSize: size, weight: .medium) }
-	static func SF_regular(size: CGFloat) -> UIFont { .systemFont(ofSize: size, weight: .regular) }
+	static func bold(size: CGFloat) -> UIFont { .systemFont(ofSize: size, weight: .bold) }
+	static func semibold(size: CGFloat) -> UIFont { .systemFont(ofSize: size, weight: .semibold) }
+	static func medium(size: CGFloat) -> UIFont { .systemFont(ofSize: size, weight: .medium) }
+	static func regular(size: CGFloat) -> UIFont { .systemFont(ofSize: size, weight: .regular) }
 }

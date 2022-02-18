@@ -1,10 +1,14 @@
 import UIKit
 
 enum ImageName: String {
+	case facebook
 	case heartOff = "heart-off"
+	case twitter
+	case instagram
 	case heartOn = "heart-on"
 	case arrowDown = "arrow-down"
 	case share
+	case settings
 	case splash
 }
 

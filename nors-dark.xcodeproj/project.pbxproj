@@ -25,11 +25,14 @@
 		545AC0AF27B1117E00EA8A48 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545AC0AE27B1117E00EA8A48 /* TextField.swift */; };
 		545AC0B127B1286E00EA8A48 /* AuthTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545AC0B027B1286E00EA8A48 /* AuthTextView.swift */; };
 		545AC0B327B138FF00EA8A48 /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545AC0B227B138FF00EA8A48 /* ConfirmViewController.swift */; };
+		545AF57D27BE4ACA0010BE84 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545AF57C27BE4ACA0010BE84 /* UserProfileViewController.swift */; };
+		545AF57F27BE4B280010BE84 /* UserHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545AF57E27BE4B280010BE84 /* UserHeaderView.swift */; };
+		545AF58127BE64C60010BE84 /* UserProfileEstateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545AF58027BE64C60010BE84 /* UserProfileEstateCell.swift */; };
 		5461BBE227B3B9F500513678 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5461BBE127B3B9F500513678 /* LoginViewController.swift */; };
 		5461BBE427B3DB5500513678 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5461BBE327B3DB5500513678 /* ForgotPasswordViewController.swift */; };
 		5461BBE727B3E13500513678 /* SearchItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5461BBE627B3E13500513678 /* SearchItemCell.swift */; };
 		5461BBE927B3E36C00513678 /* TitleDescrView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5461BBE827B3E36C00513678 /* TitleDescrView.swift */; };
-		5461BBEB27B3E90100513678 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5461BBEA27B3E90100513678 /* TableViewDataSource.swift */; };
+		5461BBEB27B3E90100513678 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5461BBEA27B3E90100513678 /* DataSource.swift */; };
 		5463F89527B66A7F00E29322 /* DetailInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5463F89427B66A7F00E29322 /* DetailInfoView.swift */; };
 		5463F89727B69C0F00E29322 /* AllDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5463F89627B69C0F00E29322 /* AllDetailsViewController.swift */; };
 		5469631B27AFD62E000B20E5 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5469631A27AFD62E000B20E5 /* WelcomeViewController.swift */; };
@@ -62,11 +65,14 @@
 		545AC0AE27B1117E00EA8A48 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		545AC0B027B1286E00EA8A48 /* AuthTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTextView.swift; sourceTree = "<group>"; };
 		545AC0B227B138FF00EA8A48 /* ConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
+		545AF57C27BE4ACA0010BE84 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		545AF57E27BE4B280010BE84 /* UserHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHeaderView.swift; sourceTree = "<group>"; };
+		545AF58027BE64C60010BE84 /* UserProfileEstateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileEstateCell.swift; sourceTree = "<group>"; };
 		5461BBE127B3B9F500513678 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5461BBE327B3DB5500513678 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		5461BBE627B3E13500513678 /* SearchItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemCell.swift; sourceTree = "<group>"; };
 		5461BBE827B3E36C00513678 /* TitleDescrView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleDescrView.swift; sourceTree = "<group>"; };
-		5461BBEA27B3E90100513678 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		5461BBEA27B3E90100513678 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		5463F89427B66A7F00E29322 /* DetailInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInfoView.swift; sourceTree = "<group>"; };
 		5463F89627B69C0F00E29322 /* AllDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDetailsViewController.swift; sourceTree = "<group>"; };
 		5469631A27AFD62E000B20E5 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +109,16 @@
 			path = Detail;
 			sourceTree = "<group>";
 		};
+		545AF57B27BE4A190010BE84 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				545AF57E27BE4B280010BE84 /* UserHeaderView.swift */,
+				545AF58027BE64C60010BE84 /* UserProfileEstateCell.swift */,
+				545AF57C27BE4ACA0010BE84 /* UserProfileViewController.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
 		5461BBE527B3E11100513678 /* Search */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,11 +145,11 @@
 			children = (
 				545AC0B027B1286E00EA8A48 /* AuthTextView.swift */,
 				54B5E4C527A9BB7F00F0C653 /* Button.swift */,
+				5461BBEA27B3E90100513678 /* DataSource.swift */,
 				5463F89427B66A7F00E29322 /* DetailInfoView.swift */,
 				5459888B27B457CC00B0328D /* FavoriteImageView.swift */,
 				5469631C27AFE144000B20E5 /* Images.swift */,
 				54A74ADF27B148A0007498D0 /* KeyboardNotification.swift */,
-				5461BBEA27B3E90100513678 /* TableViewDataSource.swift */,
 				545AC0AE27B1117E00EA8A48 /* TextField.swift */,
 				5461BBE827B3E36C00513678 /* TitleDescrView.swift */,
 			);
@@ -163,6 +179,7 @@
 				54B5E4C427A9BB7300F0C653 /* Common */,
 				541A817027B5426A00D0EE2A /* Detail */,
 				5461BBE527B3E11100513678 /* Search */,
+				545AF57B27BE4A190010BE84 /* User */,
 				54F385F427A9AF3F0067C9BE /* AppDelegate.swift */,
 				54B5E4B427A9B0A500F0C653 /* Color.swift */,
 				54B5E4BF27A9B7EF00F0C653 /* Fonts.swift */,
@@ -267,11 +284,14 @@
 				5461BBE227B3B9F500513678 /* LoginViewController.swift in Sources */,
 				54B5E4C627A9BB7F00F0C653 /* Button.swift in Sources */,
 				5459888A27B4547D00B0328D /* SearchViewController.swift in Sources */,
-				5461BBEB27B3E90100513678 /* TableViewDataSource.swift in Sources */,
+				545AF57D27BE4ACA0010BE84 /* UserProfileViewController.swift in Sources */,
+				5461BBEB27B3E90100513678 /* DataSource.swift in Sources */,
+				545AF58127BE64C60010BE84 /* UserProfileEstateCell.swift in Sources */,
 				545AC0AD27B10FCB00EA8A48 /* SignUpViewController.swift in Sources */,
 				5432B17727BCE9FB00CAD280 /* PhotoCell.swift in Sources */,
 				54A74AE027B148A0007498D0 /* KeyboardNotification.swift in Sources */,
 				5461BBE727B3E13500513678 /* SearchItemCell.swift in Sources */,
+				545AF57F27BE4B280010BE84 /* UserHeaderView.swift in Sources */,
 				5459888C27B457CC00B0328D /* FavoriteImageView.swift in Sources */,
 				5469631D27AFE144000B20E5 /* Images.swift in Sources */,
 				541A816F27B5420700D0EE2A /* DetailViewController.swift in Sources */,

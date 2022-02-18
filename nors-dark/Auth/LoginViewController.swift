@@ -23,7 +23,7 @@ final class LoginViewController: UIViewController {
 		view.backgroundColor = Color.black
 		textFieldDelegate.view = view
 
-		textLabel.font = .SF_medium(size: 10)
+		textLabel.font = .medium(size: 10)
 		textLabel.textColor = Color.darkGray
 		textLabel.text = "LOGIN WITH"
 		textLabel.translatesAutoresizingMaskIntoConstraints = false

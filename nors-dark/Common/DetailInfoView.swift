@@ -41,7 +41,7 @@ final class DetailInfoView: UIView {
 
 		set(model: model)
 
-		priceLabel.font = .SF_bold(size: 22)
+		priceLabel.font = .bold(size: 22)
 		priceLabel.translatesAutoresizingMaskIntoConstraints = false
 
 		squareView.translatesAutoresizingMaskIntoConstraints = false

@@ -21,9 +21,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 			window.overrideUserInterfaceStyle = .dark
 		}
 
-		window.rootViewController = AllDetailsViewController(
-			model: DetailInfo(price: 1400000, square: 120, rooms: 4, district: "Toronto")
-		)
+		window.rootViewController = UserProfileViewController()
 		window.makeKeyAndVisible()
 		return true
 	}

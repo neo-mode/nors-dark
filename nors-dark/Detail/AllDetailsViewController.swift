@@ -44,7 +44,7 @@ final class AllDetailsViewController: UIViewController {
 		detailInfoView.translatesAutoresizingMaskIntoConstraints = false
 
 		descrLabel.text = "Description"
-		descrLabel.font = .SF_semibold(size: 12)
+		descrLabel.font = .semibold(size: 12)
 		descrLabel.textColor = Color.white
 		descrLabel.translatesAutoresizingMaskIntoConstraints = false
 
@@ -53,13 +53,13 @@ final class AllDetailsViewController: UIViewController {
 
 		descrTextLabel.attributedText = NSAttributedString(string: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", attributes: [.paragraphStyle: pStyle])
 
-		descrTextLabel.font = .SF_regular(size: 14)
+		descrTextLabel.font = .regular(size: 14)
 		descrTextLabel.textColor = Color.darkGray
 		descrTextLabel.numberOfLines = 0
 		descrTextLabel.translatesAutoresizingMaskIntoConstraints = false
 
 		photosLabel.text = "Photos"
-		photosLabel.font = .SF_semibold(size: 12)
+		photosLabel.font = .semibold(size: 12)
 		photosLabel.textColor = Color.white
 		photosLabel.translatesAutoresizingMaskIntoConstraints = false
 

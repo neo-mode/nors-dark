@@ -20,7 +20,7 @@ final class ConfirmViewController: UIViewController {
 		super.viewDidLoad()
 		view.backgroundColor = Color.black
 
-		textLabel.font = .SF_regular(size: 14)
+		textLabel.font = .regular(size: 14)
 		textLabel.textColor = Color.darkGray
 		textLabel.text = "Please enter the verification code from the sms we just send you."
 		textLabel.numberOfLines = 0

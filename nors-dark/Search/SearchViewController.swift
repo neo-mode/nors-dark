@@ -9,7 +9,7 @@ import UIKit
 
 final class SearchViewController: UIViewController {
 
-	private let dataSource = TableViewDataSource()
+	private let dataSource = TableDataSource()
 	private let tableView = UITableView()
 
 	override func viewDidLoad() {
