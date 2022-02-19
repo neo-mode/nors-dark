@@ -21,7 +21,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 			window.overrideUserInterfaceStyle = .dark
 		}
 
-		window.rootViewController = UserProfileViewController()
+		window.rootViewController = FavoritesViewController()
 		window.makeKeyAndVisible()
 		return true
 	}

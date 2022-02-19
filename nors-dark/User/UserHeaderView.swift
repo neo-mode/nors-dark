@@ -28,7 +28,7 @@ final class UserHeaderView: UIView {
 	var model: UserHeader? {
 		didSet {
 			guard let model = model else { return }
-			imageView.image = UIImage(contentsOfFile: Bundle.main.url(forResource: "villa1", withExtension: "jpg")!.path)
+			imageView.image = UIImage(contentsOfFile: model.image.path)
 			nameLabel.text = model.name
 			cityLabel.text = model.city
 		}

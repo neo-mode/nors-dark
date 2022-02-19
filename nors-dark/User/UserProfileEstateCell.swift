@@ -67,7 +67,7 @@ final class UserProfileEstateCell: UICollectionViewCell, ViewCellID {
 	required init?(coder: NSCoder) { nil }
 
 	func set(model: CellID) {
-		let model = model as! UserProfileEstate
+		guard let model = model as? UserProfileEstate else { return assertionFailure() }
 		imageView.image = UIImage(contentsOfFile: model.image.path)
 		priceLabel.text = formatter.string(from: model.price as NSNumber)
 		descrLabel.text = "\(model.bedNum) bed \(model.bathNum) bath"

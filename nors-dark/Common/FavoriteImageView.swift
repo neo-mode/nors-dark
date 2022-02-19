@@ -20,17 +20,17 @@ final class FavoriteImageView: UIView {
 	override init(frame: CGRect) {
 		super.init(frame: frame)
 
+		imageView.contentMode = .scaleAspectFill
 		imageView.translatesAutoresizingMaskIntoConstraints = false
+		addSubview(imageView)
 
 		circleView.addTarget(nil, action: Selector(("favoriteImageViewAction:")), for: .touchUpInside)
 		circleView.layer.cornerRadius = 15
 		circleView.backgroundColor = Color.middleGray2.withAlphaComponent(0.1)
 		circleView.translatesAutoresizingMaskIntoConstraints = false
+		addSubview(circleView)
 
 		circleImageView.translatesAutoresizingMaskIntoConstraints = false
-
-		addSubview(imageView)
-		addSubview(circleView)
 		circleView.addSubview(circleImageView)
 
 		NSLayoutConstraint.activate([

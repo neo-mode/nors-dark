@@ -29,7 +29,7 @@ final class AllDetailsViewController: UIViewController {
 
 	init(model: DetailInfo) {
 		self.model = model
-		detailInfoView =  DetailInfoView(model: model, style: .detail)
+		detailInfoView =  DetailInfoView(style: .detail, model: model)
 		collectionLayout = UICollectionViewFlowLayout()
 		collectionView = UICollectionView(frame: .zero, collectionViewLayout: collectionLayout)
 		super.init(nibName: nil, bundle: nil)

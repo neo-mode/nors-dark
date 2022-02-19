@@ -8,7 +8,6 @@
 import UIKit
 
 struct DetailInfo {
-	let price: UInt32
 	let square: UInt16
 	let rooms: UInt8
 	let district: String
@@ -22,60 +21,42 @@ final class DetailInfoView: UIView {
 
 	var model: DetailInfo { didSet { set(model: model) } }
 
-	private let formatter = NumberFormatter()
-	private let priceLabel = UILabel()
 	private let squareView: TitleDescrView
 	private let roomsView: TitleDescrView
 	private let districtView: TitleDescrView
 
-	init(model: DetailInfo, style: DetailInfoViewStyle) {
+	init(style: DetailInfoViewStyle, model: DetailInfo = DetailInfo(square: 0, rooms: 0, district: "")) {
 		self.model = model
 		squareView = TitleDescrView(style: style, title: "m2")
 		roomsView = TitleDescrView(style: style, title: "Number of Rooms")
 		districtView = TitleDescrView(style: style, title: "District")
 		super.init(frame: .zero)
 
-		formatter.locale = Locale(identifier: "en_US")
-		formatter.numberStyle = .currency
-		formatter.maximumFractionDigits = 0
-
 		set(model: model)
-
-		priceLabel.font = .bold(size: 22)
-		priceLabel.translatesAutoresizingMaskIntoConstraints = false
 
 		squareView.translatesAutoresizingMaskIntoConstraints = false
 		roomsView.translatesAutoresizingMaskIntoConstraints = false
 		districtView.translatesAutoresizingMaskIntoConstraints = false
 
-		addSubview(priceLabel)
 		addSubview(squareView)
 		addSubview(roomsView)
 		addSubview(districtView)
 
 		let insets: UIEdgeInsets
-		let priceOffset, topOffset: CGFloat
+		let topOffset: CGFloat
 
 		switch style {
 		case .search:
-			priceLabel.textColor = Color.white
 			insets = UIEdgeInsets(top: 15, left: 20, bottom: 15, right: 20)
-			priceOffset = 32
-			topOffset = 5
+			topOffset = 7
 
 		case .detail:
-			priceLabel.textColor = .white
 			insets = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
-			priceOffset = 10
 			topOffset = 7
 		}
 
 		NSLayoutConstraint.activate([
-			priceLabel.topAnchor.constraint(equalTo: topAnchor, constant: insets.top),
-			priceLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: insets.left),
-			priceLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -insets.right),
-
-			squareView.topAnchor.constraint(equalTo: priceLabel.bottomAnchor, constant: priceOffset),
+			squareView.topAnchor.constraint(equalTo: topAnchor, constant: insets.top),
 			squareView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: insets.left),
 			squareView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -insets.right),
 
@@ -93,7 +74,6 @@ final class DetailInfoView: UIView {
 	required init?(coder: NSCoder) { nil }
 
 	private func set(model: DetailInfo) {
-		priceLabel.text = formatter.string(from: model.price as NSNumber)
 		squareView.descr = "\(model.square)"
 		roomsView.descr = "\(model.rooms)"
 		districtView.descr = model.district

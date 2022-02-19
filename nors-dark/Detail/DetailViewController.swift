@@ -9,13 +9,13 @@ import UIKit
 
 final class DetailViewController: UIViewController {
 
-	private let model: DetailInfo
+//	private let model: DetailInfo
 	private let detailInfoView: DetailInfoView
 	private let callNowButton = Button(style: .blue, title: "Call Now")
 
 	init(model: DetailInfo) {
-		self.model = model
-		detailInfoView =  DetailInfoView(model: model, style: .detail)
+//		self.model = model
+		detailInfoView =  DetailInfoView(style: .detail, model: model)
 		super.init(nibName: nil, bundle: nil)
 	}
 

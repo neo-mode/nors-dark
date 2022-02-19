@@ -20,10 +20,12 @@ final class TitleDescrView: UIView {
 		self.descr = descr
 		super.init(frame: .zero)
 
+		titleLabel.backgroundColor = Color.black
 		titleLabel.text = title
 		titleLabel.font = .medium(size: 12)
 		titleLabel.translatesAutoresizingMaskIntoConstraints = false
 
+		descrLabel.backgroundColor = Color.black
 		descrLabel.text = descr
 		descrLabel.font = .regular(size: 12)
 		descrLabel.textColor = Color.lightGray
