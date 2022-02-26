@@ -9,6 +9,7 @@ enum ImageName: String {
 	case arrowDown = "arrow-down"
 	case share
 	case settings
+	case search
 	case splash
 }
 

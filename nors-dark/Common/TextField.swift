@@ -9,7 +9,8 @@ import UIKit
 
 final class TextField: UITextField {
 
-	static let padding = UIEdgeInsets(top: 11, left: 19, bottom: 12, right: 19)
+	private var padding = UIEdgeInsets(top: 11, left: 19, bottom: 12, right: 19)
+	var image: Image = .none { didSet { updateImage() } }
 
 	override var placeholder: String? {
 		didSet {
@@ -18,6 +19,10 @@ final class TextField: UITextField {
 				.font: UIFont.regular(size: 14), .foregroundColor: Color.lightGray
 			])
 		}
+	}
+
+	enum Image {
+		case search, none
 	}
 
 	override init(frame: CGRect) {
@@ -31,11 +36,32 @@ final class TextField: UITextField {
 	required init?(coder: NSCoder) { nil }
 
 	override func textRect(forBounds bounds: CGRect) -> CGRect {
-		return super.textRect(forBounds: bounds).inset(by: Self.padding)
+		return super.textRect(forBounds: bounds).inset(by: padding)
 	}
 
 	override func editingRect(forBounds bounds: CGRect) -> CGRect {
-		return super.editingRect(forBounds: bounds).inset(by: Self.padding)
+		return super.editingRect(forBounds: bounds).inset(by: padding)
+	}
+
+	override func leftViewRect(forBounds bounds: CGRect) -> CGRect {
+		return super.leftViewRect(forBounds: bounds).inset(by: UIEdgeInsets(top: 0, left: 15, bottom: 0, right: -15))
+	}
+
+	private func updateImage() {
+
+		switch image {
+		case .search:
+			padding = UIEdgeInsets(top: 11, left: 10, bottom: 12, right: 19)
+			leftViewMode = .always
+			let imageView = UIImageView(image: .image(name: .search))
+			imageView.tintColor = Color.lightGray
+			leftView = imageView
+
+		case .none:
+			padding = UIEdgeInsets(top: 11, left: 19, bottom: 12, right: 19)
+			leftViewMode = .never
+			leftView = nil
+		}
 	}
 }
 
@@ -63,7 +89,7 @@ final class TextFieldDelegate: NSObject, UITextFieldDelegate, KeyboardNotificati
 		view.addGestureRecognizer(tapGesture)
 
 		if rect.minY < topPoint {
-			view.bounds.origin.y += topPoint - rect.origin.y
+			view.bounds.origin.y += topPoint - rect.minY
 		}
 	}
 
