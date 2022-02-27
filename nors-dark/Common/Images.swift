@@ -2,8 +2,10 @@ import UIKit
 
 enum ImageName: String {
 	case facebook
+	case plusCircle = "plus-circle"
 	case heartOff = "heart-off"
 	case twitter
+	case minusCircle = "minus-circle"
 	case instagram
 	case heartOn = "heart-on"
 	case arrowDown = "arrow-down"
@@ -15,7 +17,8 @@ enum ImageName: String {
 
 extension UIImage {
 	static func image(name: ImageName) -> UIImage {
-		guard let image = UIImage(named: name.rawValue) else { assertionFailure("Image not found"); return UIImage() }
-		return image
+		if let image = UIImage(named: name.rawValue) { return image }
+		assertionFailure("Image not found")
+		return UIImage()
 	}
 }

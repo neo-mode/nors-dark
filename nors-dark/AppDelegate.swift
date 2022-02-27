@@ -21,8 +21,28 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 			window.overrideUserInterfaceStyle = .dark
 		}
 
-		window.rootViewController = FavoritesViewController()
+		window.rootViewController = TestController()
 		window.makeKeyAndVisible()
 		return true
+	}
+}
+
+final class TestController: UIViewController {
+
+	let stepperView = StepperView()
+
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		view.backgroundColor = .white
+
+		stepperView.minValue = 0
+		stepperView.maxValue = 10
+		stepperView.translatesAutoresizingMaskIntoConstraints = false
+		view.addSubview(stepperView)
+
+		NSLayoutConstraint.activate([
+			stepperView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+			stepperView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+		])
 	}
 }
