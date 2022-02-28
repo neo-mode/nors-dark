@@ -7,23 +7,24 @@
 
 import UIKit
 
-protocol StepperViewDelegate: AnyObject {
-	func stepperViewIncr(_ view: StepperView, value: Int)
-	func stepperViewDecr(_ view: StepperView, value: Int)
+@objc protocol StepperViewDelegate {
+	@objc func stepperViewAction(_ view: StepperView)
 }
 
 final class StepperView: UIView {
 
-	weak var delegate: StepperViewDelegate?
-
 	var minValue: Int? { didSet {
 		guard let val = minValue else { return }
 		if value < val { value = val }
+		minReached = val == value
+		minusButton.imageView?.tintColor = minValue == value ? Color.lightWhite : Color.blue
 	}}
 
 	var maxValue: Int? { didSet {
 		guard let val = maxValue else { return }
 		if value > val { value = val }
+		maxReached = val == value
+		plusButton.imageView?.tintColor = maxValue == value ? Color.lightWhite : Color.blue
 	}}
 
 	var value: Int = 0 { didSet { textLabel.text = "\(value)" } }
@@ -96,7 +97,9 @@ final class StepperView: UIView {
 			maxReached = false
 		}
 
-		delegate?.stepperViewDecr(self, value: val)
+		UIApplication.shared.sendAction(
+			#selector(StepperViewDelegate.stepperViewAction(_:)), to: nil, from: self, for: nil
+		)
 	}
 
 	@objc private func plusAction() {
@@ -119,6 +122,8 @@ final class StepperView: UIView {
 			plusButton.imageView?.tintColor = Color.lightWhite
 		}
 
-		delegate?.stepperViewIncr(self, value: val)
+		UIApplication.shared.sendAction(
+			#selector(StepperViewDelegate.stepperViewAction(_:)), to: nil, from: self, for: nil
+		)
 	}
 }

@@ -7,6 +7,11 @@
 
 import UIKit
 
+struct TitleDescr {
+	let title: String
+	let descr: String
+}
+
 final class TitleDescrView: UIView {
 
 	var title: String { didSet { titleLabel.text = title } }

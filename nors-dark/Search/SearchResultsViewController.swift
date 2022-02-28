@@ -1,5 +1,5 @@
 //
-//  SearchViewController.swift
+//  SearchResultsViewController.swift
 //  nors-dark
 //
 //  Created by Neo Mode on 09.02.2022.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class SearchViewController: UIViewController {
+final class SearchResultsViewController: UIViewController {
 
 	private let dataSource = TableDataSource()
 	private let tableView = UITableView()
@@ -49,7 +49,7 @@ final class SearchViewController: UIViewController {
 	}
 }
 
-extension SearchViewController: UITableViewDelegate {
+extension SearchResultsViewController: UITableViewDelegate {
 
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 	}

@@ -21,7 +21,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 			window.overrideUserInterfaceStyle = .dark
 		}
 
-		window.rootViewController = SearchViewController()
+		window.rootViewController = SearchFiltersViewController()
 		window.makeKeyAndVisible()
 		return true
 	}
