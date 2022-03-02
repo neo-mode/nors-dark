@@ -15,7 +15,9 @@ struct SearchRooms: CellID {
 	let cellID = "SearchRoomsCell"
 }
 
-final class SearchRoomsCell: UITableViewCell, ViewCellID {
+final class SearchRoomsCell: UITableViewCell, ViewCellID, SearchFiltersProtocol {
+
+	weak var lineLayer: CAShapeLayer?
 
 	private let titleLabel = UILabel()
 	private let stepperView = StepperView()
@@ -34,9 +36,9 @@ final class SearchRoomsCell: UITableViewCell, ViewCellID {
 		contentView.addSubview(stepperView)
 
 		NSLayoutConstraint.activate([
-			titleLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 19),
+			titleLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 18),
 			titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 35),
-			titleLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -19),
+			titleLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -18),
 
 			stepperView.topAnchor.constraint(greaterThanOrEqualTo: contentView.topAnchor),
 			stepperView.leadingAnchor.constraint(greaterThanOrEqualTo: titleLabel.trailingAnchor),

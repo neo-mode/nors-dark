@@ -14,7 +14,9 @@ struct SearchProperty: CellID {
 	let cellID = "SearchPropertyCell"
 }
 
-final class SearchPropertyCell: UITableViewCell, ViewCellID {
+final class SearchPropertyCell: UITableViewCell, ViewCellID, SearchFiltersProtocol {
+
+	weak var lineLayer: CAShapeLayer?
 
 	private let titleLabel = UILabel()
 	private let button = Button(style: .black)

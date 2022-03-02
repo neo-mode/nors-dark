@@ -142,7 +142,7 @@
 			children = (
 				5461BBE627B3E13500513678 /* SearchItemCell.swift */,
 				5459888927B4547D00B0328D /* SearchResultsViewController.swift */,
-				54DD46AF27C265960072FBED /* SearchFiltersViewController */,
+				54DD46AF27C265960072FBED /* Controller */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -178,7 +178,7 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
-		54DD46AF27C265960072FBED /* SearchFiltersViewController */ = {
+		54DD46AF27C265960072FBED /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				545ED5EE27C2DCEA00483CE4 /* PropertyRoomsButton.swift */,
@@ -187,7 +187,7 @@
 				5462D11627CA2D3500C81D5C /* SearchPropertyCell.swift */,
 				544C6F7227CB75820018F5CC /* SearchRoomsCell.swift */,
 			);
-			path = SearchFiltersViewController;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		54F385E827A9AF3F0067C9BE = {

@@ -1,10 +1,12 @@
 import UIKit
 
 enum ImageName: String {
+	case filters
 	case facebook
 	case plusCircle = "plus-circle"
 	case heartOff = "heart-off"
 	case twitter
+	case arrange
 	case minusCircle = "minus-circle"
 	case instagram
 	case heartOn = "heart-on"

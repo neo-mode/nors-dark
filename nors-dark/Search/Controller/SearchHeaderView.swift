@@ -8,11 +8,21 @@
 import UIKit
 
 protocol SearchHeaderViewDelegate: AnyObject {
+	func searchHeaderViewProperty(_ view: SearchHeaderView)
+	func searchHeaderViewRooms(_ view: SearchHeaderView)
+}
+
+struct SearchHeader {
+	let title: String
+	let descr: String
 }
 
 final class SearchHeaderView: UIView {
 
 	weak var delegate: SearchHeaderViewDelegate?
+
+	var property: String = "" { didSet { propertyButton.descr = property } }
+	var rooms: String = "" { didSet { roomsButton.descr = rooms } }
 
 	private let titleLabel = UILabel()
 	private let searchField = TextField()
@@ -36,13 +46,13 @@ final class SearchHeaderView: UIView {
 		addSubview(searchField)
 
 		propertyButton.title = "PROPERTY TYPE"
-		propertyButton.descr = "Residental + Build…"
+//		propertyButton.descr = "Residental + Build…"
 		propertyButton.addTarget(self, action: #selector(propertyAction), for: .touchUpInside)
 		propertyButton.translatesAutoresizingMaskIntoConstraints = false
 		addSubview(propertyButton)
 
 		roomsButton.title = "ROOMS"
-		roomsButton.descr = "4 + 1"
+//		roomsButton.descr = "4 + 1"
 		roomsButton.addTarget(self, action: #selector(roomsAction), for: .touchUpInside)
 		roomsButton.translatesAutoresizingMaskIntoConstraints = false
 		addSubview(roomsButton)
@@ -107,10 +117,12 @@ final class SearchHeaderView: UIView {
 	@objc private func propertyAction() {
 		propertyButton.backgroundColor = Color.black
 		roomsButton.backgroundColor = .clear
+		delegate?.searchHeaderViewProperty(self)
 	}
 
 	@objc private func roomsAction() {
 		propertyButton.backgroundColor = .clear
 		roomsButton.backgroundColor = Color.black
+		delegate?.searchHeaderViewRooms(self)
 	}
 }
