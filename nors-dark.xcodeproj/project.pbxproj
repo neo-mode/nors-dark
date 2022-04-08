@@ -56,16 +56,16 @@
 
 /* Begin PBXFileReference section */
 		5408F97A27C1831200EFA8B6 /* SearchHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHeaderView.swift; sourceTree = "<group>"; };
-		541A815A27B513D500D0EE2A /* villa1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = villa1.jpg; path = ../../villa1.jpg; sourceTree = "<group>"; };
-		541A815C27B5284500D0EE2A /* villa9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = villa9.jpg; path = ../../villa9.jpg; sourceTree = "<group>"; };
-		541A815D27B5284500D0EE2A /* villa3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = villa3.jpg; path = ../../villa3.jpg; sourceTree = "<group>"; };
-		541A815E27B5284500D0EE2A /* villa10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = villa10.jpg; path = ../../villa10.jpg; sourceTree = "<group>"; };
-		541A815F27B5284500D0EE2A /* villa6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = villa6.jpg; path = ../../villa6.jpg; sourceTree = "<group>"; };
-		541A816027B5284500D0EE2A /* villa4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = villa4.jpg; path = ../../villa4.jpg; sourceTree = "<group>"; };
-		541A816127B5284500D0EE2A /* villa2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = villa2.jpg; path = ../../villa2.jpg; sourceTree = "<group>"; };
-		541A816227B5284500D0EE2A /* villa5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = villa5.jpg; path = ../../villa5.jpg; sourceTree = "<group>"; };
-		541A816327B5284500D0EE2A /* villa7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = villa7.jpg; path = ../../villa7.jpg; sourceTree = "<group>"; };
-		541A816427B5284500D0EE2A /* villa8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = villa8.jpg; path = ../../villa8.jpg; sourceTree = "<group>"; };
+		541A815A27B513D500D0EE2A /* villa1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = villa1.jpg; path = ../villa1.jpg; sourceTree = "<group>"; };
+		541A815C27B5284500D0EE2A /* villa9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = villa9.jpg; path = ../villa9.jpg; sourceTree = "<group>"; };
+		541A815D27B5284500D0EE2A /* villa3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = villa3.jpg; path = ../villa3.jpg; sourceTree = "<group>"; };
+		541A815E27B5284500D0EE2A /* villa10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = villa10.jpg; path = ../villa10.jpg; sourceTree = "<group>"; };
+		541A815F27B5284500D0EE2A /* villa6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = villa6.jpg; path = ../villa6.jpg; sourceTree = "<group>"; };
+		541A816027B5284500D0EE2A /* villa4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = villa4.jpg; path = ../villa4.jpg; sourceTree = "<group>"; };
+		541A816127B5284500D0EE2A /* villa2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = villa2.jpg; path = ../villa2.jpg; sourceTree = "<group>"; };
+		541A816227B5284500D0EE2A /* villa5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = villa5.jpg; path = ../villa5.jpg; sourceTree = "<group>"; };
+		541A816327B5284500D0EE2A /* villa7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = villa7.jpg; path = ../villa7.jpg; sourceTree = "<group>"; };
+		541A816427B5284500D0EE2A /* villa8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = villa8.jpg; path = ../villa8.jpg; sourceTree = "<group>"; };
 		541A816E27B5420700D0EE2A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		542B0B2F27BFBBA5004087FC /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		5432B17627BCE9FB00CAD280 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
