@@ -8,16 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5408F97B27C1831200EFA8B6 /* SearchHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5408F97A27C1831200EFA8B6 /* SearchHeaderView.swift */; };
-		541A815B27B513D500D0EE2A /* villa1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 541A815A27B513D500D0EE2A /* villa1.jpg */; };
-		541A816527B5284500D0EE2A /* villa9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 541A815C27B5284500D0EE2A /* villa9.jpg */; };
-		541A816627B5284500D0EE2A /* villa3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 541A815D27B5284500D0EE2A /* villa3.jpg */; };
-		541A816727B5284500D0EE2A /* villa10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 541A815E27B5284500D0EE2A /* villa10.jpg */; };
-		541A816827B5284500D0EE2A /* villa6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 541A815F27B5284500D0EE2A /* villa6.jpg */; };
-		541A816927B5284500D0EE2A /* villa4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 541A816027B5284500D0EE2A /* villa4.jpg */; };
-		541A816A27B5284500D0EE2A /* villa2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 541A816127B5284500D0EE2A /* villa2.jpg */; };
-		541A816B27B5284500D0EE2A /* villa5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 541A816227B5284500D0EE2A /* villa5.jpg */; };
-		541A816C27B5284500D0EE2A /* villa7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 541A816327B5284500D0EE2A /* villa7.jpg */; };
-		541A816D27B5284500D0EE2A /* villa8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 541A816427B5284500D0EE2A /* villa8.jpg */; };
 		541A816F27B5420700D0EE2A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541A816E27B5420700D0EE2A /* DetailViewController.swift */; };
 		542B0B3027BFBBA5004087FC /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542B0B2F27BFBBA5004087FC /* FavoritesViewController.swift */; };
 		5432B17727BCE9FB00CAD280 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5432B17627BCE9FB00CAD280 /* PhotoCell.swift */; };
@@ -43,6 +33,16 @@
 		5463F89727B69C0F00E29322 /* AllDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5463F89627B69C0F00E29322 /* AllDetailsViewController.swift */; };
 		5469631B27AFD62E000B20E5 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5469631A27AFD62E000B20E5 /* WelcomeViewController.swift */; };
 		5469631D27AFE144000B20E5 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5469631C27AFE144000B20E5 /* Images.swift */; };
+		547CF63028C3884A00728B56 /* villa7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 547CF62628C3884800728B56 /* villa7.jpg */; };
+		547CF63128C3884A00728B56 /* villa4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 547CF62728C3884900728B56 /* villa4.jpg */; };
+		547CF63228C3884A00728B56 /* villa8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 547CF62828C3884900728B56 /* villa8.jpg */; };
+		547CF63328C3884A00728B56 /* villa6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 547CF62928C3884900728B56 /* villa6.jpg */; };
+		547CF63428C3884A00728B56 /* villa10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 547CF62A28C3884900728B56 /* villa10.jpg */; };
+		547CF63528C3884A00728B56 /* villa3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 547CF62B28C3884900728B56 /* villa3.jpg */; };
+		547CF63628C3884A00728B56 /* villa2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 547CF62C28C3884900728B56 /* villa2.jpg */; };
+		547CF63728C3884A00728B56 /* villa5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 547CF62D28C3884900728B56 /* villa5.jpg */; };
+		547CF63828C3884A00728B56 /* villa1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 547CF62E28C3884900728B56 /* villa1.jpg */; };
+		547CF63928C3884A00728B56 /* villa9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 547CF62F28C3884A00728B56 /* villa9.jpg */; };
 		54938F1B27BFC5C6001EA594 /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54938F1A27BFC5C6001EA594 /* FavoriteCell.swift */; };
 		54A74AE027B148A0007498D0 /* KeyboardNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A74ADF27B148A0007498D0 /* KeyboardNotification.swift */; };
 		54B5E4B527A9B0A500F0C653 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B5E4B427A9B0A500F0C653 /* Color.swift */; };
@@ -56,16 +56,6 @@
 
 /* Begin PBXFileReference section */
 		5408F97A27C1831200EFA8B6 /* SearchHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHeaderView.swift; sourceTree = "<group>"; };
-		541A815A27B513D500D0EE2A /* villa1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = villa1.jpg; path = ../villa1.jpg; sourceTree = "<group>"; };
-		541A815C27B5284500D0EE2A /* villa9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = villa9.jpg; path = ../villa9.jpg; sourceTree = "<group>"; };
-		541A815D27B5284500D0EE2A /* villa3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = villa3.jpg; path = ../villa3.jpg; sourceTree = "<group>"; };
-		541A815E27B5284500D0EE2A /* villa10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = villa10.jpg; path = ../villa10.jpg; sourceTree = "<group>"; };
-		541A815F27B5284500D0EE2A /* villa6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = villa6.jpg; path = ../villa6.jpg; sourceTree = "<group>"; };
-		541A816027B5284500D0EE2A /* villa4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = villa4.jpg; path = ../villa4.jpg; sourceTree = "<group>"; };
-		541A816127B5284500D0EE2A /* villa2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = villa2.jpg; path = ../villa2.jpg; sourceTree = "<group>"; };
-		541A816227B5284500D0EE2A /* villa5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = villa5.jpg; path = ../villa5.jpg; sourceTree = "<group>"; };
-		541A816327B5284500D0EE2A /* villa7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = villa7.jpg; path = ../villa7.jpg; sourceTree = "<group>"; };
-		541A816427B5284500D0EE2A /* villa8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = villa8.jpg; path = ../villa8.jpg; sourceTree = "<group>"; };
 		541A816E27B5420700D0EE2A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		542B0B2F27BFBBA5004087FC /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		5432B17627BCE9FB00CAD280 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
@@ -91,6 +81,16 @@
 		5463F89627B69C0F00E29322 /* AllDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDetailsViewController.swift; sourceTree = "<group>"; };
 		5469631A27AFD62E000B20E5 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		5469631C27AFE144000B20E5 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		547CF62628C3884800728B56 /* villa7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = villa7.jpg; sourceTree = "<group>"; };
+		547CF62728C3884900728B56 /* villa4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = villa4.jpg; sourceTree = "<group>"; };
+		547CF62828C3884900728B56 /* villa8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = villa8.jpg; sourceTree = "<group>"; };
+		547CF62928C3884900728B56 /* villa6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = villa6.jpg; sourceTree = "<group>"; };
+		547CF62A28C3884900728B56 /* villa10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = villa10.jpg; sourceTree = "<group>"; };
+		547CF62B28C3884900728B56 /* villa3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = villa3.jpg; sourceTree = "<group>"; };
+		547CF62C28C3884900728B56 /* villa2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = villa2.jpg; sourceTree = "<group>"; };
+		547CF62D28C3884900728B56 /* villa5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = villa5.jpg; sourceTree = "<group>"; };
+		547CF62E28C3884900728B56 /* villa1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = villa1.jpg; sourceTree = "<group>"; };
+		547CF62F28C3884A00728B56 /* villa9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = villa9.jpg; sourceTree = "<group>"; };
 		54938F1A27BFC5C6001EA594 /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
 		54A74ADF27B148A0007498D0 /* KeyboardNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardNotification.swift; sourceTree = "<group>"; };
 		54B5E4B427A9B0A500F0C653 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -215,16 +215,16 @@
 				5461BBE527B3E11100513678 /* Search */,
 				545AF57B27BE4A190010BE84 /* User */,
 				54F385F427A9AF3F0067C9BE /* AppDelegate.swift */,
-				541A815A27B513D500D0EE2A /* villa1.jpg */,
-				541A816127B5284500D0EE2A /* villa2.jpg */,
-				541A815D27B5284500D0EE2A /* villa3.jpg */,
-				541A816027B5284500D0EE2A /* villa4.jpg */,
-				541A816227B5284500D0EE2A /* villa5.jpg */,
-				541A815F27B5284500D0EE2A /* villa6.jpg */,
-				541A816327B5284500D0EE2A /* villa7.jpg */,
-				541A816427B5284500D0EE2A /* villa8.jpg */,
-				541A815C27B5284500D0EE2A /* villa9.jpg */,
-				541A815E27B5284500D0EE2A /* villa10.jpg */,
+				547CF62E28C3884900728B56 /* villa1.jpg */,
+				547CF62C28C3884900728B56 /* villa2.jpg */,
+				547CF62B28C3884900728B56 /* villa3.jpg */,
+				547CF62728C3884900728B56 /* villa4.jpg */,
+				547CF62D28C3884900728B56 /* villa5.jpg */,
+				547CF62928C3884900728B56 /* villa6.jpg */,
+				547CF62628C3884800728B56 /* villa7.jpg */,
+				547CF62828C3884900728B56 /* villa8.jpg */,
+				547CF62F28C3884A00728B56 /* villa9.jpg */,
+				547CF62A28C3884900728B56 /* villa10.jpg */,
 				54F385FD27A9AF410067C9BE /* Assets.xcassets */,
 				54F385FF27A9AF410067C9BE /* LaunchScreen.storyboard */,
 				54F3860227A9AF410067C9BE /* Info.plist */,
@@ -290,18 +290,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				541A816927B5284500D0EE2A /* villa4.jpg in Resources */,
-				541A816827B5284500D0EE2A /* villa6.jpg in Resources */,
-				541A816527B5284500D0EE2A /* villa9.jpg in Resources */,
 				54F3860127A9AF410067C9BE /* LaunchScreen.storyboard in Resources */,
-				541A816A27B5284500D0EE2A /* villa2.jpg in Resources */,
-				541A816B27B5284500D0EE2A /* villa5.jpg in Resources */,
-				541A816D27B5284500D0EE2A /* villa8.jpg in Resources */,
-				541A815B27B513D500D0EE2A /* villa1.jpg in Resources */,
-				541A816727B5284500D0EE2A /* villa10.jpg in Resources */,
+				547CF63128C3884A00728B56 /* villa4.jpg in Resources */,
+				547CF63928C3884A00728B56 /* villa9.jpg in Resources */,
+				547CF63028C3884A00728B56 /* villa7.jpg in Resources */,
+				547CF63628C3884A00728B56 /* villa2.jpg in Resources */,
+				547CF63228C3884A00728B56 /* villa8.jpg in Resources */,
+				547CF63828C3884A00728B56 /* villa1.jpg in Resources */,
+				547CF63528C3884A00728B56 /* villa3.jpg in Resources */,
 				54F385FE27A9AF410067C9BE /* Assets.xcassets in Resources */,
-				541A816C27B5284500D0EE2A /* villa7.jpg in Resources */,
-				541A816627B5284500D0EE2A /* villa3.jpg in Resources */,
+				547CF63328C3884A00728B56 /* villa6.jpg in Resources */,
+				547CF63728C3884A00728B56 /* villa5.jpg in Resources */,
+				547CF63428C3884A00728B56 /* villa10.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
