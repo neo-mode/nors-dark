@@ -19,7 +19,7 @@ final class SliderView: UIView {
 	private var maxLimitX: CGFloat = 0
 
 	var minValue: CGFloat = 0
-	var maxValue: CGFloat = 100
+	var maxValue: CGFloat = 1
 
 	override init(frame: CGRect) {
 		super.init(frame: frame)
@@ -41,7 +41,7 @@ final class SliderView: UIView {
 		minCircleView.layer.cornerRadius = 11
 		addSubview(minCircleView)
 
-		maxCircleView.frame = CGRect(x: 300, y: 0, width: 22, height: 22)
+		maxCircleView.frame = CGRect(x: 0, y: 0, width: 22, height: 22)
 		maxCircleView.backgroundColor = Color.white
 		maxCircleView.layer.cornerRadius = 11
 		addSubview(maxCircleView)
@@ -57,6 +57,12 @@ final class SliderView: UIView {
 	}
 
 	required init?(coder: NSCoder) { nil }
+
+	override func layoutSubviews() {
+		super.layoutSubviews()
+
+		maxCircleView.frame.origin.x = frame.width - 22
+	}
 
 	@objc private func panAction(_ gr: PanGestureRecognizer) {
 
