@@ -21,8 +21,27 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 			window.overrideUserInterfaceStyle = .dark
 		}
 
-		window.rootViewController = SearchFiltersViewController()
+		window.rootViewController = Test()
 		window.makeKeyAndVisible()
 		return true
+	}
+}
+
+class Test: UIViewController {
+
+	private let hview = SliderView()
+
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		view.backgroundColor = Color.darkGray
+
+		hview.translatesAutoresizingMaskIntoConstraints = false
+		view.addSubview(hview)
+
+		NSLayoutConstraint.activate([
+			hview.topAnchor.constraint(equalTo: view.topAnchor, constant: 100),
+			hview.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+			hview.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
+		])
 	}
 }

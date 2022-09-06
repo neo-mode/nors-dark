@@ -19,7 +19,7 @@ final class SearchResultsViewController: UIViewController {
 		for i in 0..<20 {
 
 			let name = "villa\((i % 10) + 1)"
-			guard let url = Bundle.main.url(forResource: name, withExtension: "jpg") else {
+			guard let url = Bundle.main.url(forResource: name, withExtension: "jpeg") else {
 				return assertionFailure(name)
 			}
 
